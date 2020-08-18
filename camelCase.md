@@ -1,14 +1,23 @@
-# A Case For camelCase
-Or, better put, dromedaryCase. Because some camels have two humps. 
+# A Case For camelCase\*
 
 1. one less character used, - and _ can make for longer lines 
 2. one less keystroke vs _ 
 3. no need to hit the relatively hard-to-reach - 
 4. keyboards have **two** large shift-keys to help capitalize the next letter
-5. unambigouous word boundary, no word*CURSOR*\_word vs word\_*CURSOR*word 
-6. plays nice in all environments:
+5. unambigouous word boundary
+	- no some\**CURSOR*\*\_identifier vs some\_\**CURSOR*\*identifier
+6. super compatible with all† environments:
 	- it's safe in filesystem paths
-	- always\* safe as an identifier in programming languages
-	- \- and \_ may have special meaning for markup, or it may be an operator
+	- it's good even without case sensitivity
+	- if the only spelling difference is a case difference,  
+	  your code is hard to read: *someThing* vs *SomeThing*, is that good?‡
+	- safe to use on identifiers in most languages
+	- **\-** and **\_** could
+		- have special meaning (MarkDown)
+		- it may be an identifier or operator
 
-\* And if it doesn't work in your programming environment, maybe none of this applies anyway.
+\* Better put, dromedaryCase. Some camels have two humps.
+
+† If not in your environment, maybe none of this applies anyway.
+
+‡ Inconsistent case use is hard to remember, because it's hard to communicate verbally.
